@@ -14,6 +14,7 @@ const PASSWD_DB = "1234"
 const DB_NAME = "testgodb"
 
 var Db *gorm.DB
+
 func Initdb() *gorm.DB {
 	Db = dbConnect()
 	return Db
@@ -26,7 +27,7 @@ func dbConnect() *gorm.DB {
 	db, err := gorm.Open(mysql.Open(dbUrl), &gorm.Config{})
 
 	if err != nil {
-		fmt.Println("Connection error: %v", err)
+		fmt.Printf("Connection error: %s", err)
 	}
 
 	return db
