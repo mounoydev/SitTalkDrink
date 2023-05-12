@@ -6,7 +6,7 @@
 3. go run main.go
 ```
 
-#Build for any system
+# Build for any system
 
 ```
 1. go build
