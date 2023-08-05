@@ -6,5 +6,5 @@ import (
 
 func main() {
 	app := routers.Router()
-	app.Run(":3000")
+	app.Run(":4002")
 }

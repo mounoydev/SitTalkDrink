@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"go-test-api/controllers"
+	// "go-test-api/controllers"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -9,16 +9,16 @@ import (
 
 func Router() *gin.Engine {
 
-	product := controllers.New()
+	// product := controllers.New()
 	router := gin.Default()
 
 	router.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"data": "Hello World!"})
 	})
 
-	router.POST("/products", product.CreateProduct)
-	router.GET("/products", product.GetProducts)
-	router.GET("/products/:id", product.GetProductById)
+	// router.POST("/products", product.CreateProduct)
+	// router.GET("/products", product.GetProducts)
+	// router.GET("/products/:id", product.GetProductById)
 
 	return router
 }
