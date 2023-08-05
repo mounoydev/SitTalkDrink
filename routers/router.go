@@ -13,7 +13,7 @@ func Router() *gin.Engine {
 	router := gin.Default()
 
 	router.GET("/", func(c *gin.Context) {
-		c.JSON(http.StatusOK, "Hello World!")
+		c.JSON(http.StatusOK, "Hello Sit Talk Drink!")
 	})
 
 	// router.POST("/products", product.CreateProduct)
