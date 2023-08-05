@@ -12,8 +12,8 @@ func Router() *gin.Engine {
 	// product := controllers.New()
 	router := gin.Default()
 
-	router.GET("/hello", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"data": "Hello World!"})
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(http.StatusOK, "Hello World!")
 	})
 
 	// router.POST("/products", product.CreateProduct)
