@@ -12,7 +12,7 @@ func Router() *gin.Engine {
 	// product := controllers.New()
 	router := gin.Default()
 
-	router.GET("/", func(c *gin.Context) {
+	router.GET("/hello", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"data": "Hello World!"})
 	})
 
